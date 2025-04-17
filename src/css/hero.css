@@ -1,0 +1,19 @@
+/* mobile screen */
+.hero {
+  padding: 0 20px;
+  background-color: var(--green);
+}
+
+/* tablet screen */
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding: 0 32px;
+  }
+}
+
+/* desktop screen */
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding: 0 100px;
+  }
+}
