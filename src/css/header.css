@@ -198,11 +198,12 @@
   }
 
   .desktop-header {
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 322px;
+    gap: 366px;
     margin-top: 32px;
     margin-bottom: 0px;
     padding: 0 100px;
