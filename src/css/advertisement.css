@@ -1,1 +1,33 @@
-css ler buraya yazılacak...
+.advertisement-wrapper {
+  padding: 80px 4px;
+  background-color: var(--white);
+}
+
+.advertisement-box-model {
+  background-color: var(--green);
+  color: var(--white);
+  display: block;
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .advertisement-wrapper {
+    padding: 100px 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .advertisement-wrapper {
+    padding: 100px 94px 100px 100px;
+  }
+  .advertisement-box-model {
+    display: inline;
+  }
+
+  .H2.advertisement-text {
+    font-size: 76px;
+    font-weight: var(--semibold);
+    line-height: 1;
+    letter-spacing: -1.5%;
+  }
+}
