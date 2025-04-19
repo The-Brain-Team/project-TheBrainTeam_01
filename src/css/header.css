@@ -11,7 +11,6 @@
   padding: 0px 20px;
   gap: 137px;
   position: fixed;
-  background-color: aqua;
 }
 
 .menu-icon {
@@ -204,6 +203,5 @@
     margin-bottom: 0px;
     padding: 0 100px;
     position: fixed;
-    background-color: aqua;
   }
 }
