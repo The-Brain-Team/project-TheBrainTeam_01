@@ -3,8 +3,6 @@
   position: relative;
   margin: 0 auto;
   padding: 0;
-  padding-top: 100px;
-  background-color: var(--green);
 }
 
 .hero .container {
@@ -15,8 +13,10 @@
   justify-content: flex-start;
   align-items: flex-start;
   min-width: 375px;
-  height: 740px;
+  height: 840px;
   margin: 0 auto;
+  padding-top: 100px;
+  background-color: var(--green);
 }
 
 .Left {
@@ -48,7 +48,7 @@
 .Right {
   width: 375px;
   height: 372px;
-  background-image: url(../img/hero/hero-mobile.jpg);
+  background-image: url('../img/hero/hero-mobile.jpg');
 }
 
 .Right::after {
@@ -62,14 +62,11 @@
 
 /* tablet screen */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-  .hero {
-    padding-top: 120px;
-  }
-
   .hero .container {
     gap: 52px;
     min-width: 768px;
-    height: 900px;
+    height: 1020px;
+    padding-top: 120px;
   }
 
   .Left {
@@ -92,7 +89,7 @@
   .Right {
     width: 768px;
     height: 536px;
-    background-image: url(../img/hero/hero-tablet.jpg);
+    background-image: url('../img/hero/hero-tablet.jpg');
     z-index: 100;
   }
 
@@ -104,16 +101,13 @@
 
 /* desktop screen */
 @media only screen and (min-width: 1280px) {
-  .hero {
-    padding-top: 0;
-  }
-
   .hero .container {
     flex-direction: row;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     gap: 0;
     min-width: 1280px;
     height: 796px;
+    padding-top: 0;
   }
 
   .Left {
@@ -137,11 +131,30 @@
   .Right {
     width: 640px;
     height: 796px;
-    background-image: url(../img/hero/hero-desktop.jpg);
+    background-image: url('../img/hero/hero-desktop.jpg');
   }
 
   .Right::after {
     width: 640px;
     height: 796px;
+  }
+}
+
+/* 2x screen resulations */
+@media (min-resolution: 2x) and (max-width: 767px) {
+  .Right {
+    background-image: url('../img/hero/hero-mobile@2x.jpg');
+  }
+}
+
+@media (min-resolution: 2x) and (min-width: 768px) and (max-width: 1279px) {
+  .Right {
+    background-image: url('../img/hero/hero-tablet@2x.jpg');
+  }
+}
+
+@media (min-resolution: 2x) and (min-width: 1280px) {
+  .Right {
+    background-image: url('../img/hero/hero-desktop@2x.jpg');
   }
 }
