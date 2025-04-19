@@ -1,3 +1,7 @@
+.header {
+  z-index: 998;
+}
+
 .menu {
   display: none;
 }
