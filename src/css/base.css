@@ -7,11 +7,12 @@
 
   /* font-family */
   font-family: 'Inter Tight', sans-serif;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
   font-size: 14px;
   line-height: 1.42858;
   letter-spacing: 0;
   font-weight: var(--medium);
+  font-style: normal;
 
   /* color definations */
   --black: #141414;
@@ -27,15 +28,15 @@
   color: var(--black);
   background-color: var(--white);
 
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale; */
+  /* -webkit-text-size-adjust: 100%; */
 }
 
 /* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 375px) {
   :root {
     font-size: 16px;
     line-height: 1.25;
@@ -43,11 +44,19 @@
 }
 
 body {
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  line-height: 1.42858;
+  letter-spacing: 0;
+  font-weight: var(--medium);
+  font-style: normal;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 main {
@@ -78,7 +87,7 @@ main {
 
 .body-1 {
   font-size: 14px;
-  font-weight: var(--semibold);
+  font-weight: var(--medium);
   line-height: 1.42857;
   letter-spacing: 0;
 }
@@ -182,5 +191,11 @@ main {
   /* button properties*/
   .btn {
     width: 428px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    overflow-x: hidden;
   }
 }
