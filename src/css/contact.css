@@ -169,6 +169,7 @@
     border-radius: 15px;
     object-fit: cover;
     display: block;
+    background-color: var(--transparent);
   }
   
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -337,6 +338,7 @@
     .contact-image {
       width: 536px;
       height: 316px;
+      background-color: var(--transparent);
     }
   
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -448,6 +450,7 @@
   
     .contact-image {
       height: 352px;
+      background-color: var(--transparent);
     }
   }
   
