@@ -31,7 +31,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 /* Styles for Tablet devices */
@@ -182,5 +181,11 @@ main {
   /* button properties*/
   .btn {
     width: 428px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    overflow-x: hidden;
   }
 }
