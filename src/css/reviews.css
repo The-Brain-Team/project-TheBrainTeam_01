@@ -45,7 +45,7 @@
 
 .reviews-list {
   display: flex;
-  width: 375px; /*sadece bu kadar alan göster */
+  width: 375px;
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
@@ -55,12 +55,6 @@
   gap: 28px;
   border-radius: 24px;
   scroll-snap-type: x mandatory; /* her kartta "snap" efekti */
-
-  /* Mobil kaydırma ve yumuşaklık */
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-
-  /* Scrollbar gizleme */
   -ms-overflow-style: none;
 }
 .reviews-list::-webkit-scrollbar {
@@ -71,12 +65,11 @@
   cursor: grabbing;
 }
 
-.review-card {
-  flex: 0 0 335px; /* kart genişliği */
+.reviews-list .review-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 303px;
+  width: 344px;
   background-color: var(--white);
   border: 1px solid var(--blush);
   border-radius: 24px;
@@ -86,14 +79,14 @@
   gap: 18px;
 }
 
-.review-img {
+.reviews-card img {
   width: 56px;
   height: 56px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.review-name {
+.reviews-card .review-name {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -102,7 +95,7 @@
   line-height: 1.11111;
 }
 
-.review-text {
+.reviews-card .review-text {
   font-size: 14px;
   font-weight: var(--medium);
   text-align: center;
@@ -135,10 +128,6 @@
     text-transform: uppercase;
   }
 
-  .reviews-title .highlight {
-    color: var(--green);
-  }
-
   .reviews-description {
     width: 553px;
     height: 40px;
@@ -146,7 +135,7 @@
   }
   .reviews-list {
     gap: 8px;
-    max-width: 704px;
+    width: 704px;
     width: 704px;
     padding-left: 4px;
     list-style: none;
@@ -156,11 +145,7 @@
     width: 704px;
   }
 
-  .reviews-list::-webkit-scrollbar {
-    display: none;
-  }
-
-  .review-card {
+  .reviews-card .review-card {
     flex: 0 0 340px;
     width: 300px;
     height: 248px;
@@ -178,7 +163,6 @@
     gap: 52px;
     padding: 100px;
     width: 1280px;
-    height: 692px;
   }
   .content {
     width: 553px;
@@ -192,10 +176,6 @@
     text-transform: uppercase;
   }
 
-  .reviews-title .highlight {
-    color: var(--green);
-  }
-
   .reviews-description {
     text-align: left;
     width: 553px;
@@ -204,21 +184,21 @@
 
   .reviews-list {
     width: 1080px;
-    height: 248px;
     gap: 8px;
-    overflow: visible; /* Kaydırma kapalı */
     padding: 0;
   }
 
-  .review-card {
+  .reviews-list.dragging {
+    cursor: default;
+  }
+
+  .reviews-list .review-card {
     width: 344px;
     padding: 20px;
   }
 
-  .review-text {
+  .reviews-card .review-text {
     width: 288px;
     height: 100px;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }
