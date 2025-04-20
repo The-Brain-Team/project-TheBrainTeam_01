@@ -1,7 +1,58 @@
 <header class="header">
   <div class="container">
-    <br />
-    header section kodları buraya yazılacaktır...
-    <br />
+    <div class="desktop-header">
+      <div class="mobile-header">
+        <a href="#">
+          <img class="header-logo" src="../img/logo-mobile.svg" alt="logo" />
+        </a>
+
+        <button id="menu-open" type="button" class="menu-button">
+          <svg class="menu-icon">
+            <use href="./img/icons.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="nav-container">
+        <div id="menu" class="menu">
+          <div class="nav-wrapper">
+            <div class="nav-button-wrapper">
+              <nav>
+                <ul class="nav-list">
+                  <li>
+                    <a
+                      href="#how-it-works"
+                      class="body-1 nav-link-box-model-how"
+                      >How It Works</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#vegetables" class="body-1 nav-link-box-model-vege"
+                      >Vegetables</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#reviews" class="body-1 nav-link-box-model-review"
+                      >Reviews</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <button
+                class="header-btn header-button"
+                type="button"
+                onclick="location.href='#order'"
+              >
+                SHOP NOW
+              </button>
+            </div>
+            <button type="button" id="menu-close">
+              <svg class="menu-icon-close">
+                <use href="./img/icons.svg#icon-close-mobile"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
