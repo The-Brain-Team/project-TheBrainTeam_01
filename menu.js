@@ -21,13 +21,3 @@ window.addEventListener(`scroll`, function () {
     mainHead.classList.remove(`slidedown`);
   }
 });
-
-const mobileHead = document.querySelector(`.mobile-header`);
-
-window.addEventListener(`scroll`, function () {
-  if (this.scrollY > 32) {
-    mainHead.classList.add(`slidedown`);
-  } else {
-    mainHead.classList.remove(`slidedown`);
-  }
-});

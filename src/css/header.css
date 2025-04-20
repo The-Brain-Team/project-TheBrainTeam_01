@@ -12,8 +12,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--green);
+
+  background-color: #7a5745;
   animation: slidedown 0.4s forwards;
+  padding: 10px 0px;
 }
 
 @keyframes slidedown {
@@ -34,11 +36,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   margin-bottom: 0px;
   padding: 0px 4px;
   gap: 135px;
   width: 335px;
+  margin-top: 20px;
+  transition: margin 0.3s ease;
+}
+
+.slidedown .mobile-header {
+  margin-top: 0;
 }
 
 .menu-icon {
@@ -158,12 +165,12 @@
   }
 
   .mobile-header {
-    margin-top: 32px;
     margin-bottom: 0px;
     padding: 0px 0px;
     margin-left: 16px;
     gap: 448px;
     width: 704px;
+    margin-top: 32px;
   }
 
   .nav-link-box-model-how {
@@ -230,10 +237,16 @@
   .desktop-header {
     display: flex;
     flex-direction: row;
-    padding-top: 32px;
+
     margin-left: 100px;
     align-items: center;
     width: 1280px;
     gap: 397px;
+    margin-top: 32px;
+    transition: margin 0.3s ease;
+  }
+
+  .slidedown .desktop-header {
+    margin-top: 0;
   }
 }
