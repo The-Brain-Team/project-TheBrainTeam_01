@@ -1,5 +1,29 @@
 .header {
-  z-index: 1999;
+  z-index: 2001;
+}
+
+.mobile-header a {
+  display: inline-block;
+}
+
+.header.slidedown,
+.mobile-header.slidedown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--green);
+  animation: slidedown 0.4s forwards;
+}
+
+@keyframes slidedown {
+  from {
+    top: -250px;
+  }
+  to {
+    top: 0;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 .menu {
@@ -12,9 +36,9 @@
   align-items: center;
   margin-top: 20px;
   margin-bottom: 0px;
-  padding: 0px 20px;
-  gap: 137px;
-  position: sticky;
+  padding: 0px 4px;
+  gap: 135px;
+  width: 335px;
 }
 
 .menu-icon {
@@ -61,6 +85,10 @@
 
 .nav-link-box-model-how {
   padding: 12px 17px;
+}
+
+.header-logo-desktop {
+  display: none;
 }
 
 .nav-link-box-model-vege {
@@ -132,8 +160,10 @@
   .mobile-header {
     margin-top: 32px;
     margin-bottom: 0px;
-    padding: 0px 32px;
+    padding: 0px 0px;
+    margin-left: 16px;
     gap: 448px;
+    width: 704px;
   }
 
   .nav-link-box-model-how {
@@ -157,27 +187,27 @@
     display: none;
   }
 
+  .header-logo-desktop {
+    display: flex;
+  }
+
   .menu {
     display: flex;
   }
 
   .mobile-header {
-    display: unset;
-    justify-content: unset;
-    align-items: unset;
-    margin: 0px;
-    position: unset;
-    padding: 0px;
+    display: none;
   }
 
   .nav-list {
     flex-direction: row;
-    gap: 20px;
+    gap: 8px;
+    width: 321px;
   }
 
   .nav-button-wrapper {
     margin: 0px;
-
+    width: 498px;
     flex-direction: row;
     gap: 20px;
   }
@@ -194,18 +224,16 @@
   .nav-link-box-model-vege,
   .nav-link-box-model-review,
   .nav-link-box-model-how {
-    padding: 12px 12px;
+    padding: 11px 11px;
   }
 
   .desktop-header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    padding-top: 32px;
+    margin-left: 100px;
     align-items: center;
-    gap: 366px;
-    margin-top: 32px;
-    margin-bottom: 0px;
-    padding: 0 100px;
-    position: sticky;
+    width: 1280px;
+    gap: 397px;
   }
 }

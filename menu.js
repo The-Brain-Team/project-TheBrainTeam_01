@@ -11,3 +11,23 @@ menuOpen.addEventListener('click', function () {
 menuClose.addEventListener('click', function () {
   menu.classList.remove('is-open-menu');
 });
+
+const mainHead = document.querySelector(`.header`);
+
+window.addEventListener(`scroll`, function () {
+  if (this.scrollY > 32) {
+    mainHead.classList.add(`slidedown`);
+  } else {
+    mainHead.classList.remove(`slidedown`);
+  }
+});
+
+const mobileHead = document.querySelector(`.mobile-header`);
+
+window.addEventListener(`scroll`, function () {
+  if (this.scrollY > 32) {
+    mainHead.classList.add(`slidedown`);
+  } else {
+    mainHead.classList.remove(`slidedown`);
+  }
+});
