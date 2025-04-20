@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 40px;
   background: var(--chianti);
   padding: 80px 20px;
   max-width: 375px;
@@ -14,40 +15,27 @@
 
 /* -------------- TITLE & TEXT PROPERTIES -------------- */
 .vegetables .H2 {
+  width: 335px;
   color: var(--white);
 }
 
-.vegetables .H2-Span {
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 108%;
-  letter-spacing: -0.01em;
+.vegetables .H2 span {
   color: var(--blush);
 }
 
 .vegetables-description {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
   color: var(--white);
-  padding-top: 20px;
-  max-width: 335px;
+  width: 335px;
+}
+
+.vegetables-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .vegetables .H3 {
   color: var(--chianti);
-  padding-top: 32px;
-}
-
-.vegetables-price {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  color: var(--black);
-  padding-top: 12px;
 }
 
 /* ------------- TITLE & TEXT PROPERTIES ENDS ------------- */
@@ -55,7 +43,6 @@
 /* ------------- LIST PROPERTIES ------------- */
 
 .vegetables-list {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -64,10 +51,22 @@
 .vegetables-list-item {
   background: var(--white);
   border-radius: 40px;
-  width: 340px;
-  height: 380px;
+  width: 335px;
+  padding: 32px 24px;
+  min-height: 376px;
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.list-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 287px;
+  min-height: 312px;
 }
 
 /* -------------- LIST PROPERTIES ENDS ------------- */
@@ -170,24 +169,36 @@
   .vegetables .container {
     max-width: 768px;
     padding: 100px 32px;
+    gap: 52px;
   }
 
-  .vegetables .H2-Span {
-    font-size: 64px;
-    line-height: 100%;
+  .vegetables .H2 {
+    width: 508px;
   }
 
   .vegetables-description {
-    max-width: 626px;
-    font-size: 16px;
-    line-height: 125%;
+    width: 626px;
+  }
+
+  .vegetables-header {
+    gap: 24px;
   }
 
   .vegetables-list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 28px 24px;
+  }
+
+  .vegetables-list-item {
+    width: 340px;
+    min-height: 380px;
+    padding: 32px 30px;
+  }
+
+  .list-item-container {
+    width: 280px;
+    min-height: 316px;
   }
 
   /* -------------- IMAGE PROPERTIES FOR TABLET -------------- */
