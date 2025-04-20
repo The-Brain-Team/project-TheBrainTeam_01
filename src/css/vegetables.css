@@ -1,0 +1,440 @@
+body {
+  margin: 0 auto;
+}
+
+.vegetables {
+  display: flex;
+  justify-content: center;
+  background: var(--chianti);
+  padding: 80px 0;
+}
+
+.vegetables .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+/* -------------- TITLE & TEXT PROPERTIES -------------- */
+.H2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.H2-Span {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--blush);
+}
+
+.vegetables-description {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--white);
+  padding-top: 20px;
+  max-width: 335px;
+}
+
+.H3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--chianti);
+  padding-top: 32px;
+}
+
+.vegetables-price {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--black);
+  padding-top: 12px;
+}
+
+/* ------------- TITLE & TEXT PROPERTIES ENDS ------------- */
+
+/* ------------- LIST PROPERTIES ------------- */
+
+.vegetables-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vegetables-list-item {
+  background: var(--white);
+  border-radius: 40px;
+  width: 340px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------- LIST PROPERTIES ENDS ------------- */
+
+/* -------------- IMAGE PROPERTIES -------------- */
+
+/* --------- EGGPLANT --------- */
+
+.eggplant-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/vegatebles/eggplant-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: 2x) and (max-width: 767px) {
+  .eggplant-image {
+    background-image: url(../img/vegatebles/eggplant-mobile-2x.png);
+    max-width: 100%;
+  }
+}
+
+/* --------- EGGPLANT END--------- */
+
+/* --------- LEEK ------------- */
+
+.leek-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/vegatebles/leek-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: 2x) and (max-width: 767px) {
+  .leek-image {
+    background-image: url(../img/vegatebles/leek-mobile-2x.png);
+    max-width: 100%;
+  }
+}
+
+/* --------- LEEK END --------- */
+
+/* --------- MUSHROOM ----------- */
+
+.mushroom-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/vegatebles/mushroom-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: 2x) and (max-width: 767px) {
+  .mushroom-image {
+    background-image: url(../img/vegatebles/mushroom-mobile-2x.png);
+    max-width: 100%;
+  }
+}
+
+/* --------- MUSHROOM END --------- */
+/* --------- CORN ------------- */
+
+.corn-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/vegatebles/corn-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-resolution: 2x) and (max-width: 767px) {
+  .corn-image {
+    background-image: url(../img/vegatebles/corn-mobile-2x.png);
+    max-width: 100%;
+  }
+}
+
+/* --------- CORN END --------- */
+
+/* --------- SWEET POTATOES ----------- */
+
+.potatoe-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/vegatebles/sweet-potatoes-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: 2x) and (max-width: 767px) {
+  .potatoe-image {
+    background-image: url(../img/vegatebles/sweet-potatoes-mobile-2x.png);
+    max-width: 100%;
+  }
+}
+
+/* --------- SWEET POTATOES END --------- */
+
+/* --------- CARROT  ----------- */
+
+.carrot-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/vegatebles/carrot-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: 2x) and (max-width: 767px) {
+  .carrot-image {
+    background-image: url(../img/vegatebles/carrot-mobile-2x.png);
+    max-width: 100%;
+  }
+}
+/* --------- CARROT END --------- */
+
+/* -------------- IMAGE PROPERTIES ENDS -------------- */
+
+/* ------------- TABLET PROPERTIES ------------- */
+
+@media only screen and (min-width: 768px) {
+  .vegetables .container {
+    max-width: 704px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .H2 {
+    font-size: 64px;
+    line-height: 100%;
+  }
+
+  .H2-Span {
+    font-size: 64px;
+    line-height: 100%;
+  }
+
+  .H3 {
+    font-size: 32px;
+  }
+
+  .vegetables-description {
+    max-width: 626px;
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  .vegetables-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  /* -------------- IMAGE PROPERTIES -------------- */
+
+  /* --------- EGGPLANT --------- */
+
+  .eggplant-image {
+    background-image: url(../img/vegatebles/eggplant-tablet.png);
+  }
+
+  @media (min-resolution: 2x) and (max-width: 1279px) {
+    .eggplant-image {
+      background-image: url(../img/vegatebles/eggplant-tablet-2x.png);
+    }
+  }
+
+  /* --------- EGGPLANT END--------- */
+
+  /* --------- LEEK ------------- */
+
+  .leek-image {
+    background-image: url(../img/vegatebles/leek-tablet.png);
+  }
+
+  @media (min-resolution: 2x) and (max-width: 1279px) {
+    .leek-image {
+      background-image: url(../img/vegatebles/leek-tablet-2x.png);
+    }
+  }
+
+  /* --------- LEEK END --------- */
+
+  /* --------- MUSHROOM ----------- */
+
+  .mushroom-image {
+    background-image: url(../img/vegatebles/mushroom-tablet.png);
+  }
+
+  @media (min-resolution: 2x) and (max-width: 1279px) {
+    .mushroom-image {
+      background-image: url(../img/vegatebles/mushroom-tablet-2x.png);
+    }
+  }
+
+  /* --------- MUSHROOM END --------- */
+  /* --------- CORN ------------- */
+
+  .corn-image {
+    background-image: url(../img/vegatebles/corn-tablet.png);
+  }
+  @media (min-resolution: 2x) and (max-width: 1279px) {
+    .corn-image {
+      background-image: url(../img/vegatebles/corn-tablet-2x.png);
+    }
+  }
+
+  /* --------- CORN END --------- */
+
+  /* --------- SWEET POTATOES ----------- */
+
+  .potatoe-image {
+    background-image: url(../img/vegatebles/sweet-potatoes-tablet.png);
+  }
+
+  @media (min-resolution: 2x) and (max-width: 1279px) {
+    .potatoe-image {
+      background-image: url(../img/vegatebles/sweet-potatoes-tablet-2x.png);
+    }
+  }
+
+  /* --------- SWEET POTATOES END --------- */
+
+  /* --------- CARROT  ----------- */
+
+  .carrot-image {
+    background-image: url(../img/vegatebles/carrot-tablet.png);
+  }
+
+  @media (min-resolution: 2x) and (max-width: 1279px) {
+    .carrot-image {
+      background-image: url(../img/vegatebles/carrot-tablet-2x.png);
+    }
+  }
+  /* --------- CARROT END --------- */
+
+  /* -------------- IMAGE PROPERTIES ENDS -------------- */
+}
+
+/* ------------- TABLET PROPERTIES ENDS ------------- */
+
+/* ------------- DESKTOP PROPERTIES ------------- */
+
+@media only screen and (min-width: 1280px) {
+  .vegetables .container {
+    max-width: 1280px;
+    padding-left: 100px;
+  }
+
+  .vegetables-list-item {
+    width: 344px;
+  }
+
+  /* -------------- IMAGE PROPERTIES -------------- */
+
+  /* --------- EGGPLANT --------- */
+
+  .eggplant-image {
+    height: 244px;
+    background-image: url(../img/vegatebles/eggplant-desktop.png);
+  }
+
+  @media (min-resolution: 2x) and (min-width: 1280px) {
+    .eggplant-image {
+      background-image: url(../img/vegatebles/eggplant-desktop-2x.png);
+    }
+  }
+
+  /* --------- EGGPLANT END--------- */
+
+  /* --------- LEEK ------------- */
+
+  .leek-image {
+    height: 244px;
+    background-image: url(../img/vegatebles/leek-desktop.png);
+  }
+
+  @media (min-resolution: 2x) and (min-width: 1280px) {
+    .leek-image {
+      background-image: url(../img/vegatebles/leek-desktop-2x.png);
+    }
+  }
+
+  /* --------- LEEK END --------- */
+
+  /* --------- MUSHROOM ----------- */
+
+  .mushroom-image {
+    height: 244px;
+    background-image: url(../img/vegatebles/mushroom-desktop.png);
+  }
+
+  @media (min-resolution: 2x) and (min-width: 1280px) {
+    .mushroom-image {
+      background-image: url(../img/vegatebles/mushroom-desktop-2x.png);
+    }
+  }
+
+  /* --------- MUSHROOM END --------- */
+  /* --------- CORN ------------- */
+
+  .corn-image {
+    height: 244px;
+    background-image: url(../img/vegatebles/corn-desktop.png);
+  }
+  @media (min-resolution: 2x) and (min-width: 1280px) {
+    .corn-image {
+      background-image: url(../img/vegatebles/corn-desktop-2x.png);
+    }
+  }
+
+  /* --------- CORN END --------- */
+
+  /* --------- SWEET POTATOES ----------- */
+
+  .potatoe-image {
+    height: 244px;
+    background-image: url(../img/vegatebles/sweet-potatoes-desktop.png);
+  }
+
+  @media (min-resolution: 2x) and (max-width: 1280px) {
+    .potatoe-image {
+      background-image: url(../img/vegatebles/sweet-potatoes-desktop-2x.png);
+    }
+  }
+
+  /* --------- SWEET POTATOES END --------- */
+
+  /* --------- CARROT  ----------- */
+
+  .carrot-image {
+    height: 244px;
+    background-image: url(../img/vegatebles/carrot-desktop.png);
+  }
+
+  @media (min-resolution: 2x) and (min-width: 1280px) {
+    .carrot-image {
+      background-image: url(../img/vegatebles/carrot-desktop-2x.png);
+    }
+  }
+  /* --------- CARROT END --------- */
+
+  /* -------------- IMAGE PROPERTIES ENDS -------------- */
+}
