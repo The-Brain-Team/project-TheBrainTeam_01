@@ -1,5 +1,35 @@
 .header {
-  z-index: 1999;
+  position: fixed;
+  width: 100%;
+
+  z-index: 2001;
+}
+
+.mobile-header a {
+  display: inline-block;
+}
+
+.header-logo {
+  width: 168px;
+}
+
+.header.slidedown,
+.mobile-header.slidedown {
+  width: 100%;
+
+  background-color: var(--menu-bgcolor);
+  animation: slidedown 0.4s forwards;
+  padding: 10px 0px;
+}
+
+@keyframes slidedown {
+  from {
+    top: -250px;
+  }
+  to {
+    top: 0;
+    box-shadow-bottom: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 .menu {
@@ -10,11 +40,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   margin-bottom: 0px;
-  padding: 0px 20px;
-  gap: 137px;
-  position: fixed;
+
+  margin: 20px 15px 0 25px;
+  gap: 135px;
+  width: 335px;
+  margin-bottom: 0;
+  transition: margin 0.3s ease;
+}
+
+.slidedown .mobile-header {
+  margin-top: 0;
 }
 
 .menu-icon {
@@ -61,6 +97,10 @@
 
 .nav-link-box-model-how {
   padding: 12px 17px;
+}
+
+.header-logo-desktop {
+  display: none;
 }
 
 .nav-link-box-model-vege {
@@ -110,11 +150,6 @@
     width: 216px;
   }
 
-  .nav-container {
-    display: flex;
-    justify-content: flex-end;
-  }
-
   .menu-icon {
     width: 40px;
     height: 40px;
@@ -130,10 +165,12 @@
   }
 
   .mobile-header {
-    margin-top: 32px;
     margin-bottom: 0px;
-    padding: 0px 32px;
+
+    margin: 32px;
     gap: 448px;
+    width: 704px;
+    margin-bottom: 0;
   }
 
   .nav-link-box-model-how {
@@ -157,27 +194,27 @@
     display: none;
   }
 
+  .header-logo-desktop {
+    display: flex;
+  }
+
   .menu {
     display: flex;
   }
 
   .mobile-header {
-    display: unset;
-    justify-content: unset;
-    align-items: unset;
-    margin: 0px;
-    position: unset;
-    padding: 0px;
+    display: none;
   }
 
   .nav-list {
     flex-direction: row;
-    gap: 20px;
+    gap: 8px;
+    width: 321px;
   }
 
   .nav-button-wrapper {
     margin: 0px;
-
+    width: 498px;
     flex-direction: row;
     gap: 20px;
   }
@@ -194,18 +231,21 @@
   .nav-link-box-model-vege,
   .nav-link-box-model-review,
   .nav-link-box-model-how {
-    padding: 12px 12px;
+    padding: 11px 11px;
   }
 
   .desktop-header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    padding: 0 100px;
     align-items: center;
+    width: 1280px;
     gap: 366px;
     margin-top: 32px;
-    margin-bottom: 0px;
-    padding: 0 100px;
-    position: fixed;
+    transition: margin 0.3s ease;
+  }
+
+  .slidedown .desktop-header {
+    margin-top: 0;
   }
 }

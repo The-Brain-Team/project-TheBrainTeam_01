@@ -1,5 +1,5 @@
 .advertisement-wrapper {
-  padding: 80px 4px;
+  padding: 80px 20px;
   background-color: var(--white);
 }
 
@@ -12,13 +12,13 @@
 
 @media (min-width: 768px) {
   .advertisement-wrapper {
-    padding: 100px 16px;
+    padding: 100px 32px;
   }
 }
 
 @media (min-width: 1280px) {
   .advertisement-wrapper {
-    padding: 100px 94px 100px 100px;
+    padding: 100px 116px 100px 100px;
   }
   .advertisement-box-model {
     display: inline;
