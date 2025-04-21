@@ -43,6 +43,10 @@
   }
   
   .footer-links {
+    width: 227px;
+    height: 124px;
+  }
+  .footer-links-list {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
