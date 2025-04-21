@@ -4,11 +4,35 @@ const menu = document.getElementById('menu');
 
 const menuClose = document.getElementById('menu-close');
 
+const aboutClose = document.getElementById('about-close');
+
+const vegetablesClose = document.getElementById('vegetables-close');
+
+const reviewsClose = document.getElementById('reviews-close');
+
+const shopNowClose = document.getElementById('shop-now-close');
+
 menuOpen.addEventListener('click', function () {
   menu.classList.add('is-open-menu');
 });
 
 menuClose.addEventListener('click', function () {
+  menu.classList.remove('is-open-menu');
+});
+
+aboutClose.addEventListener('click', function () {
+  menu.classList.remove('is-open-menu');
+});
+
+vegetablesClose.addEventListener('click', function () {
+  menu.classList.remove('is-open-menu');
+});
+
+reviewsClose.addEventListener('click', function () {
+  menu.classList.remove('is-open-menu');
+});
+
+shopNowClose.addEventListener('click', function () {
   menu.classList.remove('is-open-menu');
 });
 

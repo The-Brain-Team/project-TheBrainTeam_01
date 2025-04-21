@@ -28,6 +28,7 @@
   }
   to {
     top: 0;
+    box-shadow: -1px 6px 8px 0 var(--transparent);
   }
 }
 
