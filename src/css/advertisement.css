@@ -10,6 +10,14 @@
   border-radius: 12px;
 }
 
+.advertisement-wrapper .mobile-view {
+  display: block;
+}
+
+.advertisement-wrapper .desktop-view {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .advertisement-wrapper {
     padding: 100px 32px;
@@ -24,10 +32,11 @@
     display: inline;
   }
 
-  .H2.advertisement-text {
-    font-size: 76px;
-    font-weight: var(--semibold);
-    line-height: 1;
-    letter-spacing: -1.5%;
+  .advertisement-wrapper .mobile-view {
+    display: none;
+  }
+
+  .advertisement-wrapper .desktop-view {
+    display: block;
   }
 }

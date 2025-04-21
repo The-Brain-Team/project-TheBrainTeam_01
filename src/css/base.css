@@ -5,15 +5,6 @@
   --semibold: 600;
   --bold: 700;
 
-  /* font-family */
-  font-family: 'Inter Tight', sans-serif;
-  font-optical-sizing: auto;
-  font-size: 14px;
-  line-height: 1.42858;
-  letter-spacing: 0;
-  font-weight: var(--medium);
-  font-style: normal;
-
   /* color definations */
   --menu-bgcolor: #7a5745;
   --black: #141414;
@@ -29,33 +20,50 @@
   color: var(--black);
   background-color: var(--white);
 
-  /* font-synthesis: none;
+  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
+  -webkit-text-size-adjust: 100%;
 
-  /* kaydırma çubuğu ayarları */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
+  /* font-family */
+  font-family: 'Inter Tight', sans-serif;
+  /* font-optical-sizing: auto; */
+  font-size: 14px;
+  line-height: 1.42858;
+  letter-spacing: 0;
+  font-weight: var(--medium);
+  font-style: normal;
+}
 
-  ::-webkit-scrollbar-button {
-    background-color: var(--green);
-  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
-  ::-webkit-scrollbar-track {
-    background-color: var(--green);
-  }
+/* kaydırma çubuğu ayarları */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--chianti);
-    border-radius: 0px;
-  }
+::-webkit-scrollbar-button {
+  background-color: var(--green);
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--blush);
-  }
+::-webkit-scrollbar-track {
+  background-color: var(--green);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--chianti);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blush);
 }
 
 /* Styles for Tablet devices */
@@ -68,7 +76,7 @@
 
 body {
   font-family: 'Inter Tight', sans-serif;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
   font-size: 16px;
   line-height: 1.42858;
   letter-spacing: 0.015px;

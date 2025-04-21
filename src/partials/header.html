@@ -12,7 +12,12 @@
         <a href="#">
           <img class="header-logo" src="../img/logo-mobile.svg" alt="logo" />
         </a>
-        <button id="menu-open" type="button" class="menu-button">
+        <button
+          id="menu-open"
+          type="button"
+          class="menu-button"
+          title="menu-button"
+        >
           <svg class="menu-icon">
             <use href="./img/icons.svg#icon-menu-mobile"></use>
           </svg>
@@ -26,32 +31,40 @@
                 <ul class="nav-list">
                   <li>
                     <a
-                      href="#how-it-works"
+                      id="about-close"
+                      href="#about"
                       class="body-1 nav-link-box-model-how"
                       >How It Works</a
                     >
                   </li>
                   <li>
-                    <a href="#vegetables" class="body-1 nav-link-box-model-vege"
+                    <a
+                      id="vegetables-close"
+                      href="#vegetables"
+                      class="body-1 nav-link-box-model-vege"
                       >Vegetables</a
                     >
                   </li>
                   <li>
-                    <a href="#reviews" class="body-1 nav-link-box-model-review"
+                    <a
+                      id="reviews-close"
+                      href="#reviews"
+                      class="body-1 nav-link-box-model-review"
                       >Reviews</a
                     >
                   </li>
                 </ul>
               </nav>
               <button
+                id="shop-now-close"
                 class="header-btn header-button"
                 type="button"
-                onclick="location.href='#order'"
+                onclick="location.href='#contact'"
               >
                 SHOP NOW
               </button>
             </div>
-            <button type="button" id="menu-close">
+            <button type="button" id="menu-close" title="menu-close">
               <svg class="menu-icon-close">
                 <use href="./img/icons.svg#icon-close-mobile"></use>
               </svg>

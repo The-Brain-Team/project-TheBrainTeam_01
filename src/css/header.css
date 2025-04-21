@@ -28,7 +28,7 @@
   }
   to {
     top: 0;
-    box-shadow-bottom: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 6px 8px 0 var(--transparent);
   }
 }
 
