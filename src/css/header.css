@@ -17,7 +17,7 @@
 .mobile-header.slidedown {
   width: 100%;
 
-  background-color: #7a5745;
+  background-color: var(--menu-bgcolor);
   animation: slidedown 0.4s forwards;
   padding: 10px 0px;
 }
@@ -28,7 +28,6 @@
   }
   to {
     top: 0;
-    box-shadow-bottom: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
