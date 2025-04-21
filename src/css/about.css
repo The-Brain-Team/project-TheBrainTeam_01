@@ -52,6 +52,8 @@
   flex-direction: column;
   gap: 40px;
   padding: 80px 20px;
+  width: 375px;
+  height: 676px;
 }
 
 .right .content {
@@ -163,12 +165,14 @@
   }
 
   .bottom-about {
-    width: 768px;
+    min-width: 768px;
     height: 708px;
   }
 
   .right {
     gap: 52px;
+    width: 768px;
+    height: 708px;
     padding: 100px 164px;
   }
 
@@ -228,12 +232,14 @@
   }
 
   .bottom-about {
-    width: 640px;
+    min-width: 640px;
     height: 760px;
   }
 
   .right {
     gap: 52px;
+    width: 640px;
+    height: 760px;
     padding: 100px;
   }
 

@@ -5,16 +5,8 @@
   --semibold: 600;
   --bold: 700;
 
-  /* font-family */
-  font-family: 'Inter Tight', sans-serif;
-  /* font-optical-sizing: auto; */
-  font-size: 14px;
-  line-height: 1.42858;
-  letter-spacing: 0;
-  font-weight: var(--medium);
-  font-style: normal;
-
   /* color definations */
+  --menu-bgcolor: #7a5745;
   --black: #141414;
   --white: #fbfbfb;
   --chianti: #7a3145;
@@ -28,11 +20,50 @@
   color: var(--black);
   background-color: var(--white);
 
-  /* font-synthesis: none;
+  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-  /* -webkit-text-size-adjust: 100%; */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* font-family */
+  font-family: 'Inter Tight', sans-serif;
+  /* font-optical-sizing: auto; */
+  font-size: 14px;
+  line-height: 1.42858;
+  letter-spacing: 0;
+  font-weight: var(--medium);
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* kaydırma çubuğu ayarları */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: var(--green);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--green);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--chianti);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blush);
 }
 
 /* Styles for Tablet devices */
@@ -45,10 +76,10 @@
 
 body {
   font-family: 'Inter Tight', sans-serif;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
   font-size: 16px;
   line-height: 1.42858;
-  letter-spacing: 0;
+  letter-spacing: 0.015px;
   font-weight: var(--medium);
   font-style: normal;
   display: flex;
@@ -58,6 +89,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--blush);
+  /* overflow: hidden; */
 }
 
 main {
@@ -69,21 +101,21 @@ main {
   font-size: 52px;
   font-weight: var(--semibold);
   line-height: 1;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.78px;
 }
 
 .H2 {
   font-size: 48px;
   font-weight: var(--semibold);
   line-height: 1.08333;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.72px;
 }
 
 .H3 {
   font-size: 28px;
   font-weight: var(--semibold);
   line-height: 1;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.42px;
 }
 
 .body-1 {
@@ -104,7 +136,7 @@ main {
   font-size: 18px;
   font-weight: var(--semibold);
   line-height: 1.11111;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.27px;
 }
 
 /* button properties*/
@@ -138,21 +170,21 @@ main {
     font-size: 76px;
     font-weight: var(--semibold);
     line-height: 1;
-    letter-spacing: -1.5%;
+    letter-spacing: -1.14px;
   }
 
   .H2 {
     font-size: 64px;
     font-weight: var(--semibold);
     line-height: 1;
-    letter-spacing: -1.5%;
+    letter-spacing: -0.96px;
   }
 
   .H3 {
     font-size: 32px;
     font-weight: var(--semibold);
     line-height: 1;
-    letter-spacing: -1.5%;
+    letter-spacing: -0.48px;
   }
 
   .body-1 {
@@ -173,7 +205,7 @@ main {
     font-size: 18px;
     font-weight: var(--semibold);
     line-height: 1.11111;
-    letter-spacing: -1.5%;
+    letter-spacing: -0.27px;
   }
 
   /* button properties*/
@@ -188,7 +220,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   /* button properties*/
   .btn {
     width: 428px;
