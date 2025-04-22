@@ -46,25 +46,24 @@ window.addEventListener(`scroll`, function () {
   }
 });
 
-if (window.innerWidth < 1280) {
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    nav: false,
-    dots: false,
-    autoHeight: false,
-    autoWidth: false,
-    stagePadding: 0,
-    margin: 24,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      768: {
-        items: 2,
-      },
-      1280: {
-        items: 3,
-      },
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  nav: false,
+  dots: false,
+  autoHeight: false,
+  autoWidth: false,
+  stagePadding: 0,
+  margin: 24,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
     },
-  });
-}
+    768: {
+      items: 2,
+    },
+    1280: {
+      items: 3,
+    },
+  },
+});
